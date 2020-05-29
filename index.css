@@ -1,9 +1,40 @@
 body {
     margin: 0;
-    background: #dedede;
+    background-color: #dfe1e5;
+}
+
+.containerGame
+  {
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    margin-top: 15vh;
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+
+.containerLevel
+  {
+    margin-top: 35px;
+    height: 40px;
+    width: 100%;
+    display: flex;  
+    flex-direction: row;
+    justify-content: center;
     align-items: center;
-    height: 100vh;
+  }
+.contador {
+    height: 70px;
+    width: 250px;
+    text-align: center;
+    font-size: 40px;
+    border-radius: 24px;
+    border: 1px solid #dfe1e5;
+    outline: none;
+    color: #2c4e50;
+    background-color: #ecfeec;
 }
 
 .gameboard {
@@ -65,14 +96,27 @@ body {
 .btn-start {
     width: 400px;
     height: 100px;
-    background: #ecf0f1;
-    color: #2c3e50;
+    background-color: #ecfeec;
+    color: #2c4e50;
     font-size: 2.5rem;
     position: absolute;
-    top: calc(50% - 50px);
+    top: calc(50% - 0px);
     left: calc(50% - 200px);
+    border-radius: 24px;
+    border: 1px solid #dfe1e5;
+    outline: none;
+    cursor: pointer;
+}
+
+.btn-start:hover {
+    box-shadow: 0 1px 6px 0 rgba(32, 33, 36, 0.28);
+    border-color: rgba(223, 225, 229, 0);
 }
 
 .hide {
     display: none;
+}
+
+* {
+    font-family: Arial;
 }
